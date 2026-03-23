@@ -1,0 +1,15 @@
+---
+- hosts: file_server
+  roles: 
+    - file_server
+  become: true
+
+- hosts: db_server
+  roles: 
+    - db_server
+  become: true
+
+- hosts: web_server
+  roles: 
+    - web_server
+  become: true
